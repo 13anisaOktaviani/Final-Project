@@ -1,0 +1,46 @@
+Program Kasir
+
+while(status=true){
+writeln("Silakan Masukkan Jumlah Barang : ");
+read(jumlahbarang);
+if (jumlahbarang<0)
+write("Kesalahan Input Jumlah Barang");
+write("Coba Lagi");
+status=true; end if
+else status=false;break;
+if (Susu);
+hargabarang=2500 ;
+totalharga1 =(double)(hargabarang*jumlahbarang);
+write("Total Harga : "+totalharga1);
+status = true ; end if
+else if (Es Teh);
+hargabarang=2000 ;
+totalharga2 =(double)(hargabarang*jumlahbarang);
+write("Total Harga : "+totalharga2);
+status = true ; end if
+else if( Mie );
+hargabarang=3000 ;
+totalharga3 =(double)(hargabarang*jumlahbarang);
+Write("Total Harga : "+totalharga3);
+status = true ; end if
+else if (0) then
+Write(" Transaksi Selesai ");
+status = false ; break; end if
+else
+Write(" Kesalahan Input Data ");
+status = false; break; end if
+jumlahseluruhnya = totalharga1 + totalharga2 + totalharga3;
+Write("Jumlah Belanja Anda Seluruhnya Adalah "+jumlahseluruhnya );
+writeln(" Uang Yang Di Bayar =");
+read(pembayaran);
+if(pembayaran<jumlahseluruhnya)then
+write("Kesalahan Input Pembayaran / Uang Tidak Mencukupi Pembelanjaan");
+write("Coba Lagi");
+status = true ;
+else
+status=false;break;
+uangkembalian = pembayaran - jumlahseluruhnya;
+write("Kembalian = Rp "+uangkembalian+ " ");
+end if
+end
+}
